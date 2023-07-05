@@ -1,0 +1,30 @@
+<section class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form (submit)="submitForm()">
+            <div class="form-group">
+                <label for="name">Name<span>*</span>
+                </label>
+                <input type="text" id="name" name="name" required="required" [(ngModel)]="contactForm.name"></div>
+                <div class="form-group">
+                    <label for="address">Address<span></span>
+                    </label>
+                    <input type="text" id="address" name="address"  [(ngModel)]="contactForm.address"></div>
+                    <div class="form-group">
+                        <label for="email">Email<span>*</span>
+                        </label>
+                        <input type="email" id="email" name="email" required="required" [(ngModel)]="contactForm.email"></div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number<span></span>
+                            </label>
+                            <input type="tel" id="phone" name="phone" [(ngModel)]="contactForm.phone"></div>
+                            <div class="form-group">
+                                <label for="github">GitHub Username<span>*</span>
+                                </label>
+                                <input type="text" id="github" name="github" required="required" [(ngModel)]="contactForm.github"></div>
+                                <button type="submit" onclick="submitForm()">Submit</button>
+                            </form>
+                        </div>
+                    </section>
+
+                    <app-navbar></app-navbar>

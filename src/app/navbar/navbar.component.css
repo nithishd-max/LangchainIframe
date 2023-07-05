@@ -1,0 +1,45 @@
+.navbar {
+    background-color: #427abfbc;
+    position: fixed;
+    padding: 15px 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .nav-item a:hover {
+    background-color: #555;
+  }
+  
+  .active {
+    background-color: #555;
+  }
+  
+  /* Additional styles to push content below the navbar */
+  body {
+    padding-top: 40px; /* Adjust this value to match the height of your navbar */
+  }
+  

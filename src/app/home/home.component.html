@@ -1,0 +1,14 @@
+<section class="video-section">
+  <div class="container">
+    <h2>Langchain Course Videos</h2>
+    <div class="video-list">
+      <div class="video-container" *ngFor="let video of videoList">
+        <h3>{{ video.title }}</h3>
+        <iframe width="560" height="315" [src]="getVideoUrl(video.Vid)" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <app-navbar></app-navbar>
